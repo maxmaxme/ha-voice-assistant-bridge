@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "HTTP Conversation Agent",
+        "description": "Connect Home Assistant Assist to any HTTP backend that speaks the minimal contract: POST {base_url}{endpoint_path} with JSON {\"text\": \"...\"} → JSON {\"response\": \"...\", \"continue_conversation\"?: bool}. Authorization: Bearer <api_key> is sent when an API key is provided. STT and TTS in the HA pipeline are unaffected.",
+        "data": {
+          "base_url": "Base URL",
+          "api_key": "API key (optional, sent as Bearer token)",
+          "endpoint_path": "Conversation endpoint path",
+          "health_path": "Health-check path (optional, leave blank to skip the probe)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not reach the backend health endpoint. Check that the service is running and that the health path returns 200, or clear it to skip the probe."
+    },
+    "abort": {
+      "already_configured": "This base URL + endpoint path is already configured."
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "domain": "http_conversation_agent",
+  "name": "HTTP Conversation Agent",
+  "version": "0.3.0",
+  "codeowners": ["@maxmaxme"],
+  "documentation": "https://github.com/maxmaxme/ha-http-conversation-agent",
+  "issue_tracker": "https://github.com/maxmaxme/ha-http-conversation-agent/issues",
+  "iot_class": "local_polling",
+  "config_flow": true,
+  "dependencies": ["conversation"],
+  "integration_type": "service"
+}
