@@ -12,12 +12,22 @@ Voice PE ──▶ HA STT ──▶ Voice Assistant Bridge ──POST /assist─
 
 ## Installation (HACS)
 
+One-click via [My Home Assistant](https://my.home-assistant.io/):
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=maxmaxme&repository=ha-voice-assistant-bridge&category=integration)
+
+Or manually:
+
 1. HACS → ⋮ → **Custom repositories** → add
    `https://github.com/maxmaxme/ha-voice-assistant-bridge`, category
    **Integration**.
 2. Find **Voice Assistant Bridge** in HACS → Download.
 3. Restart Home Assistant.
-4. Settings → Devices & Services → **Add Integration** → "Voice Assistant Bridge".
+4. Then add the integration in HA:
+
+   [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=voice_assistant_bridge)
+
+   Or: Settings → Devices & Services → **Add Integration** → "Voice Assistant Bridge".
 5. Fill in:
    - **Base URL** — e.g. `http://localhost:3000` (where your
      voice-assistant service is reachable from the HA container).
