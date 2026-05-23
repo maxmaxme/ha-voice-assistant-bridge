@@ -2,12 +2,12 @@
 
 Home Assistant conversation agent that forwards every Assist query to a
 self-hosted [`voice-assistant`](https://github.com/maxmaxme/voice-assistant)
-HTTP service over `POST /text` and returns the response to HA's TTS stage.
+HTTP service over `POST /assist` and returns the response to HA's TTS stage.
 
 Designed to slot into the HA Voice PE pipeline:
 
 ```
-Voice PE ──▶ HA STT ──▶ Voice Assistant Bridge ──POST /text──▶ voice-assistant ──▶ HA TTS ──▶ Voice PE
+Voice PE ──▶ HA STT ──▶ Voice Assistant Bridge ──POST /assist──▶ voice-assistant ──▶ HA TTS ──▶ Voice PE
 ```
 
 ## Installation (HACS)
