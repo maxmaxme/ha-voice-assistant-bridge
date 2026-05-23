@@ -44,7 +44,7 @@ Settings → Voice assistants → pick your pipeline → **Conversation agent**
 
 ## Contract with the voice-assistant service
 
-- Request: `POST {base_url}/text` with `{"text": "<user utterance>"}`
+- Request: `POST {base_url}/assist` with `{"text": "<user utterance>"}`
 - Response: `{"response": "<assistant text>"}`
 - Auth: `Authorization: Bearer <api_key>`
 - Health probe: `GET {base_url}/health` (used by config_flow only)
